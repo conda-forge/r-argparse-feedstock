@@ -1,4 +1,4 @@
-{% set version = '1.0.4' %}
+{% set version = '2.0.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/argparse_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/argparse/argparse_{{ version }}.tar.gz
-  sha256: 0fbd2346e3539089233dc772ebd9b0dbb037dec7eb3c44361a43cf5da750cce3
+  sha256: 71fcac2b3070294e7e9714f5d5c38bdaaa621055e668fe01f7d9548d183c37e3
 
 build:
   noarch: generic
@@ -25,16 +25,14 @@ requirements:
   build:
     - r-base
     - r-findpython
-    - r-getopt >=1.19
-    - r-proto
-    - r-rjson
+    - r-jsonlite
+    - r-r6
 
   run:
     - r-base
     - r-findpython
-    - r-getopt >=1.19
-    - r-proto
-    - r-rjson
+    - r-jsonlite
+    - r-r6
     - python
 
 test:
