@@ -26,12 +26,14 @@ requirements:
     - r-base
     - r-findpython
     - r-jsonlite
+    - r-getopt >=1.19
     - r-r6
 
   run:
     - r-base
     - r-findpython
     - r-jsonlite
+    - r-getopt >=1.19
     - r-r6
     - python
 
