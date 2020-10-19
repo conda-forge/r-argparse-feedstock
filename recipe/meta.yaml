@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/argparse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/argparse/argparse_{{ version }}.tar.gz
-  sha256: 949843920d14fc7c162aedab331a936499541736e7dafbb103fbfd79be8147ab
+  sha256: d26139c610ea0adf8d6632699cd34c4595ae3e7963bfc7a00cb3b7504f2059b0
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,10 +44,9 @@ test:
 about:
   home: https://github.com/trevorld/r-argparse
   license: GPL (>= 2)
-  summary: A command line parser to be used with Rscript to write "#!" shebang scripts that gracefully
-    accept positional and optional arguments and automatically generate usage.
+  summary: A command line parser to be used with Rscript to write "#!" shebang scripts that gracefully accept positional and optional arguments and automatically generate usage.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
