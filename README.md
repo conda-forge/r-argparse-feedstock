@@ -5,11 +5,9 @@ Home: https://github.com/trevorld/r-argparse
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-argparse-feedstock/blob/master/LICENSE.txt)
 
 Summary: A command line parser to be used with Rscript to write "#!" shebang scripts that gracefully accept positional and optional arguments and automatically generate usage.
-
-
 
 Current build status
 ====================
