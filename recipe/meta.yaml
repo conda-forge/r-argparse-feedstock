@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,6 +35,7 @@ requirements:
     - r-findpython
     - r-getopt >=1.19
     - r-jsonlite
+    - python >=3.2
 
 test:
   commands:
