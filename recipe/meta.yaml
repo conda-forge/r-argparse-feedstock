@@ -1,4 +1,4 @@
-{% set version = "2.2.4" %}
+{% set version = "2.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/argparse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/argparse/argparse_{{ version }}.tar.gz
-  sha256: 1d4efd137b8c3760f5beea2e0ba71293ce26a9d5533223adef0ffc5b816a1e47
+  sha256: 53c8a9eb51041084eb3d9c271b14ebcb32dc2f50cf16afa5c54c504a97229ea4
 
 build:
   number: 0
